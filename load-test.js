@@ -1,6 +1,6 @@
 import http from 'k6/http';
 
-url = // todo
+const url = 'Your IP'
 
 export const options = {
     vus: 100,
@@ -8,5 +8,5 @@ export const options = {
 };
 
 export default function () {
-    http.get('http://{url}:8080/test');
+    http.get('http://${url}:8080/test');
 }
