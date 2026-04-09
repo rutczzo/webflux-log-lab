@@ -105,7 +105,7 @@ throughput ≈ 792 req/s
 
 ## Spring WebFlux 테스트
 
-동일 조건에서 **WebFlux 서버 테스트** 진행.
+동일 부하 조건에서 **WebFlux 서버 테스트** 진행.
 
 ### 결과
 
@@ -128,7 +128,7 @@ throughput ≈ 3282 req/s
 - **Event Loop**
 - **Non-blocking I/O**
 
-대량 동시 요청 환경에서 **WebFlux가 높은 처리량을 유지하는 것**을 확인하였다.
+각 프레임워크의 처리 모델 특성을 확인하기 위해 내부 구현에 차이를 두어 실험했으며, 이를 통해 Spring MVC와 WebFlux의 요청 처리 방식과 구조적 차이를 확인하였다.
 
 ---
 
